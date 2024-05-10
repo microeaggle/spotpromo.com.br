@@ -3,6 +3,18 @@
 
 
 <html class="user_font_size_normal" lang="en"><head>
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Due to security reason,right click is not allowed";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
 <!--
  login.jsp
  * ***** BEGIN LICENSE BLOCK *****
@@ -78,7 +90,7 @@
                                     <option value="mobile" > Mobile</option>
                                     </select>
                                 <script TYPE="text/javascript">
-                                document.write("<a href='#' onclick='showWhatsThis();' id='ZLoginWhatsThisAnchor' aria-controls='ZLoginWhatsThis' aria-expanded='false'>What’s This?</a>");
+                                document.write("<a href='#' onclick='showWhatsThis();' id='ZLoginWhatsThisAnchor' aria-controls='ZLoginWhatsThis' aria-expanded='false'>Whatâ€™s This?</a>");
                                 </script>
                                 <div id="ZLoginWhatsThis" class="ZLoginInfoMessage" style="display:none;" onclick='showWhatsThis();' role="tooltip"><h3 style="text-align:center;">Client Types:</h3>	<b>Advanced</b> offers the full set of Web collaboration features. This Web Client works best with newer browsers and faster Internet connections. <br><br><b>Standard</b> is recommended when Internet connections are slow, when using older browsers, or for easier accessibility. <br><br><b>Mobile</b> is recommended for mobile devices. <br><br>To set <b>Default</b> to be your preferred client type, change the sign in options in your Preferences, General tab after you sign in.</div>
                                    <div id="ZLoginUnsupported" class="ZLoginInfoMessage" style="display:none;">Note that your web browser or display does not fully support the Advanced version.  We strongly recommend that you use the Standard client.</div>
@@ -94,7 +106,7 @@
 		<div class="Footer">
 			<div id="ZLoginNotice" class="legalNotice-small"><a target="_new" href="https://www.zimbra.com">Zimbra</a> :: the leader in open source messaging and collaboration :: <a target="_new" href="https://blog.zimbra.com">Blog</a> - <a target="_new" href="https://wiki.zimbra.com">Wiki</a> - <a target="_new" href="https://www.zimbra.com/forums">Forums</a> | Powered by <a target="_new" href="http://www.zextras.com">Zextras</a> |</div>
 			<div class="copyright">
-			Copyright © 2005-2021 Synacor, Inc. All rights reserved. "Zimbra" is a registered trademark of Synacor, Inc.</div>
+			Copyright Â© 2005-2021 Synacor, Inc. All rights reserved. "Zimbra" is a registered trademark of Synacor, Inc.</div>
 		</div>
 		<div class="decor2"></div>
 	</div>
